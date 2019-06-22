@@ -1,5 +1,7 @@
 FROM golang:alpine
 
+# from https://github.com/GoogleCloudPlatform/cloud-builders/blob/master/go/Dockerfile.alpine
+
 # Install VCS tools to support "go get" commands and install gcc.
 RUN apk add --update --no-cache git mercurial subversion build-base
 
